@@ -1,0 +1,181 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.header{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 31, 4, 0.7),rgba(4, 30, 4, 0.7)),url(bg.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+nav{
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+nav img{
+  width: 150px;
+}
+.navmenu{
+  flex: 1;
+  text-align: right;
+}
+.navmenu ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+.navmenu ul li a{
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+}
+.navmenu ul li::after{
+  content: '';
+  width: 0%;
+  height: 2px;
+  background: green;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+}
+.navmenu ul li:hover::after{
+  width: 100%;
+
+}
+.textbox{
+  width: 90%;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.textbox h1{
+  font-size: 62px;
+}
+.textbox p{
+  margin: 10px 0 40px;
+  font-size: 14px;
+  color: white;
+}
+.btn{
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  font-size: 13px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+.btn:hover{
+  border: 1px solid green;
+  background:  green;
+  transition: 1s;
+}
+
+/*-----------login---------*/
+.main{
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+
+}
+.main-box{
+  width: 380px;
+  height: 425px;
+  position: relative;
+  margin: 6% auto;
+  background: #fff;
+  padding: 5px;
+  overflow: hidden;
+}
+.button{
+  width: 220px;
+  margin: 35px auto;
+  position: relative;
+  box-shadow: 0 0 20px 9px #ff61241f;
+  border-radius: 30px;
+}
+.toggle-btn{
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  outline: none;
+  position: relative;
+}
+#buttoncolor{
+top: 0;
+left: 0;
+position: absolute;
+width: 110px;
+height: 100%;
+background: linear-gradient(to right, #ff105f,#ffad06);
+border-radius: 30px;
+transition: .5s;
+}
+.icons{
+  margin: 30px auto;
+  text-align: center;
+}
+.icons img{
+  width: 30px;
+  margin: 0 12px;
+  box-shadow: 0 0 20px 0 #7f7f7f3d;
+  cursor: pointer;
+  border-radius: 50%;
+}
+.input-group{
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: .5s;
+}
+.input-field{
+  width: 100%;
+  padding: 10px 0;
+  margin: 5px 0;
+  border-left: 0;
+  border-top: 0;
+  border-right: 0;
+  border-bottom: 1px solid #999;
+  outline: none;
+  background: transparent;
+}
+.submitbutton{
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  background: linear-gradient(to right, #ff105f,#ffad06);
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.boxcheck{
+  margin: 30px 10px 30px 0;
+}
+span{
+  color: #777;
+  font-size: 12px;
+  bottom: 68px;
+  position: absolute;
+}
+#log{
+  left: 50px;
+}
+#reg{
+  left: 450px;
+}

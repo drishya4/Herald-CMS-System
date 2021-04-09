@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCMS</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <section class="header">
+    <nav>
+      <a href="home.html"><img src="log.png " height="60"></a>
+      <div class="navmenu">
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="">GALLERY</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+    </nav> 
+  <div class="main">
+    <div class="main-box">
+      <div class="button">
+        <div id="buttoncolor"></div>
+        <button type="buttn" class="toggle-btn" onclick="log()">LOG IN</button>
+        <button type="buttn" class="toggle-btn" onclick="reg()">Register</button>
+      </div>
+      <div class="icons">
+        <img src="fb.png">
+        <img src="ins.jpg">
+        <img src="t.png">
+      </div>
+      <form id="log" class="input-group">
+        <input type="text" class="input-field" placeholder="Id" required>
+        <input type="text" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="boxcheck"><span>Remember Password</span>
+        <button type="submit" class="submitbutton">Login</button>
+      </form>
+      <form id="reg" class="input-group">
+        <input type="text" class="input-field" placeholder="Id" required>
+        <input type="email" class="input-field" placeholder="Email Id" required>
+        <input type="text" class="input-field" placeholder="Password" required>
+        <input type="checkbox" class="boxcheck"><span>I agree to the terms and conditions.</span>
+        <button type="submit" class="submitbutton">Register</button>
+      </form>
+    </div>
+    </div>
+    <script>
+      var x = document.getElementById("log");
+      var y = document.getElementById("reg");
+      var z = document.getElementById("buttoncolor");
+      
+      function reg(){
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+      function log(){
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px";
+      }
+    </script>
+  </section>
+</body>
+</html>
