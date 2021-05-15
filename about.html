@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCMS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="subheader">
+    <nav>
+      <a href="home.html"><img src="log.png " height="60"></a>
+      <div class="navmenu" id="navMenu">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="event.html">EVENT</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>About Us</h1>
+  </section>
+
+  <!---------------about us content------------------>
+
+  <section class="about-us">
+    <div class="row">
+      <div class="about-col">
+        <h1>Welcome to Herald College Kathmandu (HCK)</h1>
+        <p>Herald College Kathmandu (HCK) Herald College Kathmandu provides the best UK university education at most affordable fees.Herald College Kathmandu offers the BSc (Hons) International Business Management and BSc (Hons) in Computer Science qualification from the University of Wolverhampton (WLV).Herald College Kathmandu offers direct degrees in Information Technology and Business. The courses are entirely designed, approved and delivered by the University of Wolverhampton, in association with New Zealand.</p>
+        <a href="" class="btn greenbtn">EXPLORE US</a>
+      </div> 
+      <div class="about-col">
+        <img src="about.jpg">
+
+      </div>
+    </div>
+
+  </section>
+
+
+
+<!-- --------------Footer----------------- -->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim asperiores omnis magni temporibus nostrum.<br> Soluta magnam possimus debitis molestiae.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-skype"></i>
+    </div>
+    <p>Herald College Kathmandu <i class="fa fa-copyright"></i>2021</p>
+
+  </section>
+
+<!-- -------------Java Script for Toggle Menu--------------- -->
+      <script>
+        var navMenu = document.getElementById("navMenu");
+        function showMenu(){
+          navMenu.style.right = "0";
+        }
+        function hideMenu(){
+          navMenu.style.right = "-200px";
+        }
+      </script>
+</body>
+</html>

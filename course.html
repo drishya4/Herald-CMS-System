@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HCMS</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <section class="subheader">
+    <nav>
+      <a href="home.html"><img src="log.png " height="60"></a>
+      <div class="navmenu" id="navMenu">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="home.html">HOME</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="course.html">COURSE</a></li>
+          <li><a href="event.html">EVENT</a></li>
+          <li><a href="login.html">LOGIN</a></li>
+        </ul>
+      </div>
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Courses We Offer</h1>
+  </section>
+
+<!-- --------------Courses content----------------- -->
+<section class="course">
+  <h1>Our Courses</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+  <div class="row">
+    <div class="course-col">
+      <h3>BIBM</h3>
+      <p>International Business has been the major phenomena to increase the knowledge and expertise worldwide. Organisations are going beyond boundaries to compete in the international market. These organisations need experts who can devise international strategies to work across multicultural barriers.</p>
+    </div>
+
+    <div class="course-col">
+      <h3>BIT</h3>
+      <p>This programme aims to provide students with the knowledge of core principles of computer science by combining it with modern computer languages, tools, techniques, and methodologies used by computer professional all over the world. Students will be able to develop and enhance themselves as a programmer, along with problem solving skills.</p>
+    </div>
+
+    <div class="course-col">
+      <h3>IMBA</h3>
+      <p>The International MBA is an award developed to provide pre-experience applicants with a postgraduate business qualification which will develop their skills and knowledge in the management of business at all levels. This award will develop your knowledge of key business functions and their relationship with the wider strategic and international environment.</p>
+    </div>
+
+  </div>
+
+</section>
+
+<!-- ------------Services-------------------->
+<section class="services">
+  <h1>Our Services</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+  <div class="row">
+    <div class="servicescol">
+      <img src="library.png">
+      <h3>World Class E-Library</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel aut sed.</p>
+    </div>
+    <div class="servicescol">
+      <img src="cafeteria.png">
+      <h3>Tasty Food Cafeteria</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel aut sed.</p>
+    </div>
+    <div class="servicescol">
+      <img src="basketball.png">
+      <h3>Best Play Ground</h3>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At vel aut sed.</p>
+    </div>
+  </div>
+</section>
+
+<!-- --------------Footer----------------- -->
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim asperiores omnis magni temporibus nostrum.<br> Soluta magnam possimus debitis molestiae.</p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-skype"></i>
+    </div>
+    <p>Herald College Kathmandu <i class="fa fa-copyright"></i>2021</p>
+
+  </section>
+
+<!-- -------------Java Script for Toggle Menu--------------- -->
+      <script>
+        var navMenu = document.getElementById("navMenu");
+        function showMenu(){
+          navMenu.style.right = "0";
+        }
+        function hideMenu(){
+          navMenu.style.right = "-200px";
+        }
+      </script>
+</body>
+</html>
